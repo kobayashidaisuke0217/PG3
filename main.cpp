@@ -3,7 +3,7 @@ int Add(int salaryA) {
 	return salaryA + 1072;
 }
 int Recursion(int salaryB) {
-	return salaryB * 2 - 50;
+	return salaryB+salaryB * 2 - 50;
 }
 
 int Compartion(int salaryA, int salaryB,int count) {
