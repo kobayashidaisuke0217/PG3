@@ -12,7 +12,7 @@ T1 Min(T1 a, T2 b) {
 }
 template<>
 char Min<char>(char a, char b) {
-return	printf("数字以外は代入できません");
+return	printf("数字以外は代入できません\n");
 }
 int main() {
 	printf("%d\n", Min<int, float>(1000, 200.0f));
