@@ -19,7 +19,7 @@ char Min<char>(char a, char b) {
 }
 template<typename T1>
 int Min(int a, T1 b) {
-	if (static_cast<int>(a) >= static_cast<T1>(b)) {
+	if (static_cast<int>(a) >= static_cast<int>(b)) {
 		printf("%d\n", static_cast<int>(a));
 		return static_cast<int>(a);
 	}
