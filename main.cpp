@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 template<typename T1,typename T2>
 
@@ -12,7 +12,7 @@ T1 Min(T1 a, T2 b) {
 }
 template<>
 char Min<char>(char a, char b) {
-return	printf("”šˆÈŠO‚Í‘ã“ü‚Å‚«‚Ü‚¹‚ñ");
+return	printf("æ•°å­—ä»¥å¤–ã¯ä»£å…¥ã§ãã¾ã›ã‚“");
 }
 int main() {
 	printf("%d\n", Min<int, float>(1000, 200.0f));
