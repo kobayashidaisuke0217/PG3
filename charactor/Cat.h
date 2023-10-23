@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "IZoo.h"
 class Cat:public IZoo
 {

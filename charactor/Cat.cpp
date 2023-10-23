@@ -1,13 +1,13 @@
-#include "Cat.h"
+ï»¿#include "Cat.h"
 #include <stdio.h>
 Cat::~Cat()
 {
-	printf("%s‚ª‹‚Á‚Ä‚¢‚Á‚½\n", name_);
+	printf("%sãŒå»ã£ã¦ã„ã£ãŸ\n", name_);
 }
 void Cat::Initialize()
 {
-	name_ = "”L";
-	printf("%s‚ªŒ»‚ê‚½\n", name_);
+	name_ = "çŒ«";
+	printf("%sãŒç¾ã‚ŒãŸ\n", name_);
 }
 
 void Cat::Update()
@@ -21,6 +21,6 @@ void Cat::Draw()
 
 void Cat::Cry()
 {
-	printf("%s‚Ì–Â‚«º‚Í‚É‚á‚ ‚É‚á‚ \n", name_);
+	printf("%sã®é³´ãå£°ã¯ã«ã‚ƒã‚ã«ã‚ƒã‚\n", name_);
 }
 
