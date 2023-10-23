@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 int Add(int salaryA) {
 	return salaryA + 1072;
 }
@@ -8,12 +8,12 @@ int Recursion(int salaryB) {
 
 int Compartion(int salaryA, int salaryB,int salaryBAdd ,int count) {
 	count++;
-	printf("%d���ԓ������Ƃ�\n", count);
+	printf("%d時間働いたとき\n", count);
 	salaryA = Add(salaryA);
-	printf("��ʓI�Ȓ���̌n�̏ꍇ��%d�~\n", salaryA);
+	printf("一般的な賃金体系の場合は%d円\n", salaryA);
 	salaryB = Recursion(salaryB);
 	salaryBAdd = salaryBAdd + salaryB;
-	printf("�ċA�I�Ȓ���̌n�̏ꍇ��%d�~\n", salaryBAdd);
+	printf("再帰的な賃金体系の場合は%d円\n", salaryBAdd);
 	if (salaryA <= salaryB) {
 		return salaryB;
 	}
