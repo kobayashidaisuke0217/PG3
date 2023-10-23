@@ -8,12 +8,12 @@ int Recursion(int salaryB) {
 
 int Compartion(int salaryA, int salaryB,int salaryBAdd ,int count) {
 	count++;
-	printf("%dŠÔ“­‚¢‚½‚Æ‚«\n", count);
+	printf("%dï¿½ï¿½ï¿½Ô“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½\n", count);
 	salaryA = Add(salaryA);
-	printf("ˆê”Ê“I‚È’À‹à‘ÌŒn‚Ìê‡‚Í%d‰~\n", salaryA);
+	printf("ï¿½ï¿½Ê“Iï¿½È’ï¿½ï¿½ï¿½ÌŒnï¿½Ìê‡ï¿½ï¿½%dï¿½~\n", salaryA);
 	salaryB = Recursion(salaryB);
 	salaryBAdd = salaryBAdd + salaryB;
-	printf("Ä‹A“I‚È’À‹à‘ÌŒn‚Ìê‡‚Í%d‰~\n", salaryBAdd);
+	printf("ï¿½Ä‹Aï¿½Iï¿½È’ï¿½ï¿½ï¿½ÌŒnï¿½Ìê‡ï¿½ï¿½%dï¿½~\n", salaryBAdd);
 	if (salaryA <= salaryB) {
 		return salaryB;
 	}
