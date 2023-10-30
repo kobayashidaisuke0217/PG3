@@ -2,15 +2,19 @@
 #include <windows.h>
 #include <time.h>
 #include <stdlib.h>
-typedef int (*PFunc)();
+typedef int (*PFunc)(int a );
 
 int RandDice() {
 	return rand() % 6 + 1;
 }
-void Answer(PFunc p, int selectAnswer) {
-	printf("正解は...?\n");
-	//Sleep(3000);
-	int answer = p();
+void SetTimeOut(PFunc p,int second, int selectAnswer) {
+	Sleep(second*1000);
+	p(selectAnswer);
+}
+int Answer(int selectAnswer) {
+	
+	
+	int answer = RandDice();
 	int answerNum = answer % 2;
 	int selectNum = selectAnswer % 2;
 	printf("答え%d\n", answer);
@@ -36,19 +40,21 @@ void Answer(PFunc p, int selectAnswer) {
 	else {
 		printf("不正解!!!\n\n");
 	}
+	return 0;
 }
 
 int main() {
 	srand((unsigned int)time(nullptr));
 
-	PFunc pfunc = &RandDice;
+	PFunc pfunc = &Answer;
 	int select;
+	
 	printf("サイコロは偶数( 0 )、奇数( 1 )どっちでしょう\n\n");
 	printf("偶数( 0 )、奇数( 1 )どちらかを入力\n");
 	printf("予想:");
 	scanf_s("%d", &select);
-
+	printf("正解は?\n");
 	// 結果発表
-	Answer(pfunc, select);
+	SetTimeOut(pfunc,3, select);
 	return 0;
 }
