@@ -1,12 +1,10 @@
 ﻿#include <stdio.h>
 #include <windows.h>
 #include <time.h>
-#include <stdlib.h>
+#include <functional>
 typedef int (*PFunc)(int a );
 
-int RandDice() {
-	return rand() % 6 + 1;
-}
+
 void SetTimeOut(PFunc p,int second, int selectAnswer) {
 	Sleep(second*1000);
 	p(selectAnswer);
@@ -14,10 +12,14 @@ void SetTimeOut(PFunc p,int second, int selectAnswer) {
 int Answer(int selectAnswer) {
 	
 	
-	int answer = RandDice();
+	
+	std::function<int()>diceRoll = [&]() {
+		return rand() % 6 + 1;
+	};
+	int answer = diceRoll();
 	int answerNum = answer % 2;
 	int selectNum = selectAnswer % 2;
-	printf("答え%d\n", answer);
+	printf("出た目は%d\n", answer);
 	if (selectNum == 0) {
 		printf("予想  偶数\n");
 	}
