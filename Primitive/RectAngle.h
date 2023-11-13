@@ -1,9 +1,9 @@
 ﻿#pragma once
 #include "IShape.h"
-class RectAngle :public IShape
+class Rectangle :public IShape
 {
 public:
-	~RectAngle()override;
+	~Rectangle()override;
 	void Initialize(float radian)override;
 	void Update()override;
 	void Draw()override;

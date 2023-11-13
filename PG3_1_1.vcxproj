@@ -22,12 +22,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Primitive\Circle.cpp" />
     <ClCompile Include="Primitive\IShape.cpp" />
-    <ClCompile Include="Primitive\RectAngle.cpp" />
+    <ClCompile Include="Primitive\Rectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Primitive\Circle.h" />
     <ClInclude Include="Primitive\IShape.h" />
-    <ClInclude Include="Primitive\RectAngle.h" />
+    <ClInclude Include="Primitive\Rectangle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

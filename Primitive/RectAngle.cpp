@@ -1,27 +1,27 @@
 ﻿#include "RectAngle.h"
 #include <stdio.h>
-RectAngle::~RectAngle()
+Rectangle::~Rectangle()
 {
 	
 }
 
-void RectAngle::Initialize(float radian)
+void Rectangle::Initialize(float radian)
 {
 	this->radian_ = radian;
 }
 
 
 
-void RectAngle::Update()
+void Rectangle::Update()
 {
 }
 
-void RectAngle::Draw()
+void Rectangle::Draw()
 {
 	printf("矩形の面積は%f\n",size_);
 }
 
-void RectAngle::Size()
+void Rectangle::Size()
 {
 	size_ = radian_ * radian_;
 }
