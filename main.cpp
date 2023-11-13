@@ -1,9 +1,9 @@
 ﻿#include <stdio.h>
 #include <iostream>
 #include <memory>
-#include "charactor/Circle.h"
-#include "charactor/IShape.h"
-#include "charactor/RectAngle.h"
+#include "Primitive/Circle.h"
+#include "Primitive/IShape.h"
+#include "Primitive/RectAngle.h"
 
 using namespace std;
 int main() {

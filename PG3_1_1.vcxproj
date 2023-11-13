@@ -19,15 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="charactor\Circle.cpp" />
-    <ClCompile Include="charactor\RectAngle.cpp" />
-    <ClCompile Include="charactor\IShape.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Primitive\Circle.cpp" />
+    <ClCompile Include="Primitive\IShape.cpp" />
+    <ClCompile Include="Primitive\RectAngle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="charactor\Circle.h" />
-    <ClInclude Include="charactor\RectAngle.h" />
-    <ClInclude Include="charactor\IShape.h" />
+    <ClInclude Include="Primitive\Circle.h" />
+    <ClInclude Include="Primitive\IShape.h" />
+    <ClInclude Include="Primitive\RectAngle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
