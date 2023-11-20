@@ -13,15 +13,12 @@ int main() {
 			return  rand() % 6 + 1;
 	
 	};
-	
-	
 	// 入力した予想
 	int selectAnswer;
 	int waitTime = 3;
-	
-    
-	printf("サイコロは偶数( 0 ),奇数( 1 )どっちだ\n\n");
+
 	while (true) {
+		printf("サイコロは偶数( 0 ),奇数( 1 )どっちだ\n\n");
 		printf("偶数( 0 ),奇数( 1 ),終了(2)どちらかを入力\n");
 		printf("予想:");
 		scanf_s("%d", &selectAnswer);
@@ -29,7 +26,7 @@ int main() {
 			break;
 		}
 		printf("正解は?\n");
-		//setTimeOut(randomDice(), selectAnswer,waitTime);
+		
 		std::function<void()> resultDiceRoll = [&]() {
 			// 正解
 			int result = randomDice();
